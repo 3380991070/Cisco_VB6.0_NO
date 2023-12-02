@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VisualBasicProjectFile>工程1.vbp</VisualBasicProjectFile>
+    <Name>工程1</Name>
+    <RootNamespace>工程1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>70fd3aa2-335d-49b1-bc62-82bea09f5523</ProjectGuid>
+    <ProjectTypeGuids>{9621999f-d20f-4a2f-b597-c8928534e032}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Form1.frx">
+      <SubType>Content</SubType>
+      <DependentUpon>Form1.frm</DependentUpon>
+    </Content>
+    <Content Include="tm3.frx">
+      <SubType>Content</SubType>
+      <DependentUpon>tm3.frm</DependentUpon>
+    </Content>
+    <Content Include="tmyq3bg.frx">
+      <SubType>Content</SubType>
+      <DependentUpon>tmyq3bg.frm</DependentUpon>
+    </Content>
+    <Content Include="tmyq3wz.frx">
+      <SubType>Content</SubType>
+      <DependentUpon>tmyq3wz.frm</DependentUpon>
+    </Content>
+    <Content Include="工程1.vbp">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.frm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tm3.frm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tm3pd.frm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tmxz.frm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tmyq3bg.frm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tmyq3wz.frm">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <Target Name="CreateManifestResourceNames">
+  </Target>
+  <Target Name="CoreCompile">
+  </Target>
+</Project>
